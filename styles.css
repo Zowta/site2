@@ -218,7 +218,7 @@ body {
 {
 	position:relative;
 	width:48%;
-	padding-top:50px;
+	padding-top:20px;
 }
 
 
@@ -236,6 +236,7 @@ body {
 	bottom:280px;  /* This raises the DIV by 300 pixels and then the CSS below removes 300 pixels of margin. */
 	left: 50%;
 	margin-bottom:-280px; /*This removes the empty space below. */
+	padding-bottom:20px;
 
 	background:url(images/17.jpg);
 	background-size: 100% 100% ; /* Makes the selected image fill 100% of the div via Background Image CSS */
@@ -250,7 +251,7 @@ body {
 
 #aboutCenterText
 			{
-				padding: 0px 140px 0px 140px;
+				padding: 0px 140px -10px 140px;
 				text-align:center;
 				font-size:20px;
 			}

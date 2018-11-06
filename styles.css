@@ -189,13 +189,6 @@ body {
 	font-family:Overpass;
 }
 
-.center p
-{
-	text-align:center;
-	padding: 0px 50px 0px 50px;
-}
-
-
 
 #centerAnim
 {
@@ -249,26 +242,38 @@ body {
 }
 
 #indexCenterText
-{
-	font-size:20px;
-}
+			{
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
+			}
+
+#aboutCenterText
+			{
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
+			}
 
 #patternsCenterText
 			{
-				padding-right:140px;
-				padding-left:140px;
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
 			}
 			
 #artCenterText
 			{
-				padding-right:140px;
-				padding-left:140px;
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
 			}
 			
 #contactCenterText
 			{
-				padding-right:140px;
-				padding-left:140px;
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
 			}
 
  
@@ -610,7 +615,7 @@ footer {
 				width:90%;
             }
 			
-			.centerText p
+			.aboutCenterText p
 			{
 				font-size:13px;
 			}
@@ -627,29 +632,30 @@ footer {
 				width:80%;				
 			}
 			
-			#indexCenterText
+#indexCenterText
 			{
-				font-size:20px;
+				padding: 0px 30px 0px 30px;
+			}
+
+#aboutCenterText
+			{
+				padding: 0px 30px 0px 30px;
+				font-size:15px;
+			}
+
+#patternsCenterText
+			{
+				padding: 0px 30px 0px 30px;
 			}
 			
-			#patternsCenterText 
+#artCenterText
 			{
-				position:relative;
-				padding-right:30px;
-				padding-left:30px;
+				padding: 0px 30px 0px 30px;
 			}
 			
-			#artCenterText
+#contactCenterText
 			{
-				padding-right:30px;
-				padding-left:30px;
-			}
-			
-			#contactCenterText
-			{
-				padding-right:30px;
-				padding-left:30px;
-				font-size:28px;
+				padding: 0px 30px 0px 30px;
 			}
 			
 			.grid-container3 { /* Grid on Pattern Page */

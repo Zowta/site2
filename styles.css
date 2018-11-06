@@ -253,6 +253,11 @@ body {
 	font-size:20px;
 }
 
+#aboutCenterText
+{
+	font-size:20px;
+}
+
 #patternsCenterText
 			{
 				padding-right:140px;
@@ -630,6 +635,11 @@ footer {
 			#indexCenterText
 			{
 				font-size:20px;
+			}
+			
+			#aboutCenterText
+			{
+				font-size:14px !important;
 			}
 			
 			#patternsCenterText 

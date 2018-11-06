@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" grid-container="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+    <script src="jquery.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap-tooltip.js"></script>
+    <script src="bootstrap-dropdown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	
+<style>
+
+
+</style>
+</head>
+
+<body>
+
+
+<div class="grid-container">
+
+	<div class="header">	
+        <img id="cs" src="images/cs.png"> 		
+		
+		<p id="pOne"><b>Tel:</b> 07984 606258</p>
+		<p id="pTwo"><b>Email:</b> ExampleEmail@hotmail.com</p>
+		
+		<img id="payhip" src="images/payhip.png">
+		<p id="payhipText">Find our store on Payhip!</p>
+		
+		<img id="facebook" src="images/fb.png">	
+		<p id="fbText">Visit us on Facebook!</p>
+		
+		<img id="insta" src="images/insta.png">	
+		<p id="instaText">Or perhaps instagram?</p>		
+	</div>
+	
+	<div id="links" class="links">
+		<a href="index.html">HOME</a>
+		<a href="about.html">ABOUT</a>
+		<a href="patterns.html">PATTERNS</a>
+		<a href="art.html"><b>ART</b></a>		 
+		<a href="contact.html">CONTACT</a>       
+	</div>
+
+<div class="center animated fadeIn" id="centerAnim">
+  
+	<div class="imageCenter">
+	
+	</div>
+	
+	<h1 style="text-align:center;">The Art Gallery</h1>
+  
+	<p id="artCenterText"><font size="4">Below you can see just some of the Art i have created and sold throughout the years, if you would like to see more visit our <font color="#46b">Facebook</font> page and view our albums! If you are interested in purchasing a peice of art be sure to visit our <font color="#46e">Payhip</font> Page!</font></p>
+	
+	<div class="grid-container4">
+	<div id="grid1" class="grid4-item1 animated fadeIn"></div>  
+	<div id="grid2" class="grid4-item2 animated fadeIn"></div>
+	<div id="grid3" class="grid4-item3 animated fadeIn"></div>  	
+	</div>
+	
+	<div class="grid-container5">
+  <div id="grid1" class="grid5-item1 animated fadeIn"></div>  
+  <div id="grid2" class="grid5-item2 animated fadeIn"></div>  
+  <div id="grid3" class="grid5-item3 animated fadeIn"></div>  
+	</div>
+	
+	
+</div>
+
+<footer class="fixed_footer">
+Site designed and created by Alex Dickens, contact me at <strong>AlexD2032@gmail.com</strong> 
+</footer>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("links");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+
+/* MOBILE CSS LOCATED AT BOTTOM OF CSS SHEET */
+
+* {
+ box-sizing: border-box;
+}
+
+*:before,
+*:after 
+{
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+ margin:0;
+}
+
+.grid-container
+{
+	display: grid;
+	min-height: 100vh; /* will cover the 100% of viewport */
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding-bottom: 20px; /* height of your footer */
+}
+
+.header 
+{ 
+	/*background-color:#e09085;  Rose Gold*/
+	height: 148px;
+	background-color:white;
+}
+
+#cs  /* Image atop the screen */
+{
+	height: 80px;
+	width: 230px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:35px;
+}
+
+#payhip /*PH Logo top left */
+{
+	height:40px;
+	width:40px;
+	position:relative;
+	bottom:190px;
+	left:10px;
+	float:left;
+}
+
+#facebook /*FB Logo top left */
+{
+	height:40px;
+	width:40px;
+	position:relative;
+	float:left;
+	bottom:140px;
+	left:-30px;
+}
+
+#insta /*Insta Logo top left */
+{
+	height:40px;
+	width:40px;
+	position:relative;
+	float:left;
+	bottom:90px;
+	left:-70px;
+}
+
+
+#pOne
+{
+	pointer-events: none;
+	letter-spacing:1.4px;
+	font-family: Overpass;
+	text-align:right;
+	
+	position:relative;
+	bottom:80px;
+	right:20px;
+}
+
+#pTwo
+{
+	pointer-events: none;
+	letter-spacing:1.4px;
+	font-family: Overpass;
+	text-align:right;
+	
+	position:relative;
+	bottom:80px;
+	right:20px;
+}
+
+#payhipText
+{
+	pointer-events: none;
+	letter-spacing:1.4px;
+	font-family: Overpass;
+	text-align:lefts;
+	
+	display:inline;
+	position:relative;
+	bottom:182px;
+	left:-57px;
+}
+
+#fbText
+{
+	pointer-events: none;
+	letter-spacing:1.4px;
+	font-family: Overpass;
+	text-align:lefts;
+	
+	display:inline;
+	position:relative;
+	bottom:127px;
+	left:-272px;
+}
+
+#instaText
+{
+	pointer-events: none;
+	letter-spacing:1.4px;
+	font-family: Overpass;
+	text-align:lefts;
+	
+	display:inline;
+	position:relative;
+	bottom:77px;
+	left:-454px;
+}
+
+.links
+{
+	width:100%; /* 100% size of current page */
+	height:60px;
+	text-align:center;
+	border-bottom: 2px solid black;
+	background-color:white;
+	z-index:9999;
+}
+
+.links a
+{
+	font-family: Overpass;
+	font-size: 25px;
+	color:black;
+	position:relative;
+	top:15px;
+	padding: 30px 30px;
+	text-decoration:none;
+}
+
+.links a:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 2px;
+  right: 0;
+  background: #000;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease; /* Animation for Links */
+  
+}
+ 
+.links a:hover:after{
+  width: 100%;
+  left: 0;
+  background: #000;
+}
+
+.center
+{ 
+	min-width:100%;
+	min-height:100%;
+    margin: auto;
+	font-family:Overpass;
+}
+
+.center p
+{
+	text-align:center;
+	padding: 0px 50px 0px 50px;
+}
+
+
+
+#centerAnim
+{
+	animation-duration:3s;
+}
+
+.imageCenter
+{
+	background-color:red;
+	overflow:hidden;
+	pointer-events: none;
+	height:180px;
+	background: url(images/cross.jpg) center center no-repeat ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); /* Causes image to transition to opacity 0 */
+}
+
+#textLink1
+{
+	color:black;
+	
+}
+
+.centerText
+{
+	position:relative;
+	width:48%;
+	padding-top:50px;
+}
+
+
+
+.imageAbout
+{
+	position:relative;
+	border-radius: 25px;
+	border: 2px solid black;
+
+		
+	height: 400px;
+	width:48%;
+	
+	bottom:280px;  /* This raises the DIV by 300 pixels and then the CSS below removes 300 pixels of margin. */
+	left: 50%;
+	margin-bottom:-280px; /*This removes the empty space below. */
+
+	background:url(images/17.jpg);
+	background-size: 100% 100% ; /* Makes the selected image fill 100% of the div via Background Image CSS */
+}
+
+#indexCenterText
+{
+	font-size:20px;
+}
+
+#patternsCenterText
+			{
+				padding-right:140px;
+				padding-left:140px;
+			}
+			
+#artCenterText
+			{
+				padding-right:140px;
+				padding-left:140px;
+			}
+			
+#contactCenterText
+			{
+				padding-right:140px;
+				padding-left:140px;
+			}
+
+ 
+ 
+ /* ALL GRID ON PHOTO/ART PAGE */
+
+.grid-container2 {	/* Grid on Pattern Page */
+	position:relative;
+	padding-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	display: grid;
+	max-width:90%;
+	grid-column-gap: 10px;
+	grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-container3 { /* Grid on Pattern Page */
+	position:relative;
+	padding-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	display: grid;
+	max-width:90%;
+	grid-column-gap: 200px;
+	grid-template-columns: auto auto;
+}
+
+.grid-container4 {    /* Grid on ART Page */
+	position:relative;
+	padding-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	display: grid;
+	max-width:90%;
+	grid-column-gap: 150px;
+	grid-template-columns: auto auto auto;
+}
+
+.grid-container5 {    /* 2nd Grid on ART Page */
+	position:relative;
+	padding-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	display: grid;
+	max-width:90%;
+	grid-column-gap: 150px;
+	grid-template-columns: auto auto auto;
+}
+
+
+.grid3-item1 {
+	max-width:100%;
+	height:300px;
+	border-radius: 25px;
+	background:url(images/18.jpg);
+	background-size: 100% 100% ;
+}
+.grid3-item2 {
+	border-radius: 25px;
+	background:url(images/19.jpg);
+	background-size: 100% 100% ;
+}
+
+.grid-item1 {
+	max-width:100%;
+	height:240px;
+	border-radius: 25px;
+	background:url(images/3.jpg);
+	background-size: 100% 100% ;
+}
+.grid-item2 {
+	border-radius: 25px;
+	background:url(images/4.jpg);
+	background-size: 100% 100% ;
+}
+.grid-item3 {
+	border-radius: 25px;
+	background:url(images/2.jpg);
+	background-size: 100% 100% ;
+}
+.grid-item4 {
+	border-radius: 25px;
+	background:url(images/1.jpg);
+	background-size: 100% 100% ;
+}
+.grid-item5 {
+	border-radius: 25px;
+	background:url(images/5.jpg);
+	background-size: 100% 100% ;
+}
+
+.grid2-item1 {
+	max-width:100%;
+	height:240px;
+	border-radius: 25px;
+	background:url(images/6.jpg);
+	background-size: 100% 100% ;
+}
+.grid2-item2 {
+	border-radius: 25px;
+	background:url(images/7.jpg);
+	background-size: 100% 100% ;
+}
+.grid2-item3 {
+	border-radius: 25px;
+	background:url(images/8.jpg);
+	background-size: 100% 100% ;
+}
+.grid2-item4 {
+	border-radius: 25px;
+	background:url(images/9.jpg);
+	background-size: 100% 100% ;
+}
+.grid2-item5 {
+	border-radius: 25px;
+	background:url(images/10.jpg);
+	background-size: 100% 100% ;
+}
+
+.grid4-item1 {
+	max-width:100%;     /* Grid on ART Page */
+	height:300px;
+	border-radius: 25px;
+	background:url(paintings/15.jpg);
+	background-size: 100% 100% ;
+}
+.grid4-item2 {
+	border-radius: 25px;
+	background:url(paintings/18.jpg);
+	background-size: 100% 100% ;
+}
+.grid4-item3 {
+	border-radius: 25px;
+	background:url(paintings/19.jpg);
+	background-size: 100% 100% ;
+}
+
+.grid5-item1 {
+	max-width:100%;     /* Grid on ART Page */
+	height:300px;
+	border-radius: 25px;
+	background:url(paintings/14.jpg);
+	background-size: 100% 100% ;
+}
+.grid5-item2 {
+	border-radius: 25px;
+	background:url(paintings/16.jpg);
+	background-size: 100% 100% ;
+}
+.grid5-item3 {
+	border-radius: 25px;
+	background:url(paintings/17.jpg);
+	background-size: 100% 100% ;
+}
+
+#grid1
+{
+	animation-duration:5s;
+}
+#grid2
+{
+	animation-duration:6s;
+}
+#grid3
+{
+	animation-duration:7s;
+}
+#grid4
+{
+	animation-duration:8s;
+}
+#grid5
+{
+	animation-duration:8s;
+}
+
+/* END OF ALL GRID CODE */
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ border-top: 2px solid #eee;
+ font-family:Overpass;
+ text-align:center;
+}
+
+.contact-form
+{
+	position:relative;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+}
+
+#contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#000;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+
+.sticky { /* becomes added onto the center div via JScript */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 1px 1px 25px #000;
+}
+
+.sticky + .center 
+{	
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 1000px) { /* What this query really means, is “If [device width] is less than or equal to 1000px, then do {…}” */
+
+            .centerText {
+				position:relative;
+				margin-left:auto;
+				margin-right:auto;
+				font-size:20px;
+				width:90%;
+            }
+			
+			.centerText p
+			{
+				font-size:13px;
+			}
+			
+			.imageAbout 
+			{
+				position:relative;
+				margin-left:auto;
+				margin-right:auto;
+				left:0;
+				bottom:0;
+				padding-top:20px;
+				margin-bottom:0;
+				width:80%;				
+			}
+			
+			#indexCenterText
+			{
+				font-size:20px;
+			}
+			
+			#patternsCenterText 
+			{
+				position:relative;
+				padding-right:30px;
+				padding-left:30px;
+			}
+			
+			#artCenterText
+			{
+				padding-right:30px;
+				padding-left:30px;
+			}
+			
+			#contactCenterText
+			{
+				padding-right:30px;
+				padding-left:30px;
+				font-size:28px;
+			}
+			
+			.grid-container3 { /* Grid on Pattern Page */
+				position:relative;
+				padding-top:50px;
+				margin-left:auto;
+				margin-right:auto;
+				display: grid;
+				max-width:90%;
+				grid-column-gap: 80px;
+				grid-template-columns: auto auto;
+			}
+
+			.grid-container4 {    /* Grid on ART Page */
+				position:relative;
+				padding-top:50px;
+				margin-left:auto;
+				margin-right:auto;
+				display: grid;
+				max-width:90%;
+				grid-column-gap: 20px;
+				grid-template-columns: auto auto auto;
+			}
+
+			.grid-container5 {    /* 2nd Grid on ART Page */
+				position:relative;
+				padding-top:50px;
+				margin-left:auto;
+				margin-right:auto;
+				padding-bottom:50px;
+				display: grid;
+				max-width:90%;
+				grid-column-gap: 20px;
+				grid-template-columns: auto auto auto;
+			}
+ }
+

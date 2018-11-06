@@ -205,7 +205,6 @@ body {
 .imageCenter
 {
 	background-color:red;
-	overflow:hidden;
 	pointer-events: none;
 	height:180px;
 	background: url(images/cross.jpg) center center no-repeat ;
